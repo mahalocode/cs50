@@ -14,20 +14,22 @@ int main(void)
      printf("enter a number: \n");
      h = GetInt();
      
-    // looping through h
-}while(h <= 0 || h > 23);
+    // looping for invalid height
+}while(h < 0 || h > 23);
 
-// loop for rows
+//initialization, condition, update
+
+//looping through each condition ensure correct number is input, else keep looping until correct # is input.
 for(int a = h; a > 0; a--)
 {
-    for(int b = 0; b < a - 1; b++)
+    for(int b = 0; b < h; b++)
     {
         printf(" ");
     }
     printf("#");
     c++;
     
-    //loop for dashes
+    
     for(int d = 0; d < c; d++)
     {
         printf("#");
